@@ -35,3 +35,29 @@ l (last) = Replace this match and exit (this is the last one).
 
 Replace within a selection (Visual Mode):
 :'<,'>s/old/new/g
+
+# about bracket
+## 1. Navigation (Jumping Between Brackets)
+    % : Jump to the matching parenthesis, square bracket, or curly brace. Place your cursor on one bracket, hit %, and you will instantly leap to its partner.
+
+## 2. The Power Combo: Text Objects
+    The golden formula in Vim for handling blocks of text is: [Action] + [i or a] + [Bracket Type]
+
+i = inner (targets only the content inside the brackets).
+a = around / all (targets the content and the brackets themselves).
+
+### 🗑️ Delete (d)
+di( or dib : Delete everything inside ( ).
+da( or dab : Delete everything including the ( ).
+
+### ✏️ Change (c) — Delete and enter Insert Mode
+ci( : Clear everything inside ( ) and immediately start typing.
+ca( : Clear the entire bracket block and start typing.
+
+### 📋 Yank / Visual (y / v)
+yi( : Copy (Yank) text inside ( ).
+vi( : Highlight (Visual mode) text inside ( ).
+
+## 3. Quick Reference Table
+Vim treats all types of pairs similarly. Just change the final character to match the target bracket:
+
