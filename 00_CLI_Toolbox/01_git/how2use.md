@@ -1,4 +1,3 @@
-merge
 hwo to creat
 git switch -c feature/login
 
@@ -8,6 +7,7 @@ git switch <name>
 
 git switch -c feature/login
     create and go to that branch
+<<<<<<< HEAD
 ====================================
 git switch main
 git merge simulate/fix_point
@@ -18,6 +18,3 @@ git push
 git push origin -d simulate/fiix_point //delet on remote
 
 ====================================
-
-
-
