@@ -61,3 +61,17 @@ vi( : Highlight (Visual mode) text inside ( ).
 ## 3. Quick Reference Table
 Vim treats all types of pairs similarly. Just change the final character to match the target bracket:
 
+
+
+================
+vim -O <file1> <file2>
+ctrl +w then h or l
+
+========================
+ctrl d
+ctrl u
+===================================
+ctrl r redo
+shift r repace mode
+=========================
+f + [{( goto [{( 
