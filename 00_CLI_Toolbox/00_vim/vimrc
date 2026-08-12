@@ -1,0 +1,19 @@
+set number
+set relativenumber
+
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+
+set undofile
+" mkdir -p ~/.vim/undodir
+set undodir=~/.vim/undodir
+set undolevels=1000
+set undoreload=10000
+
+autocmd BufReadPost * normal! g`"
+"autocmd FileType make setlocal noexpandtab
+autocmd FileType make set noexpandtab
