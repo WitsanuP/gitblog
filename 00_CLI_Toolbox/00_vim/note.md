@@ -75,3 +75,12 @@ ctrl r redo
 shift r repace mode
 =========================
 f + [{( goto [{( 
+==============================
+find and repeat
+:%s/<old word>/<new word>/g
+
+`%` : find all in file (if not, do just only one line) ขอบเขตการค้นหา
+`s` : substitute
+`g` : global repeat all in file
+`c` : confirm
+`i` : dont care พิมพ์เล็กพิมม์ใหญ่
