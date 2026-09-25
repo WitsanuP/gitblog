@@ -8,7 +8,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
-# norm
+# old school way 
 ## req
 - must haave `pdflatex` 
 ## let start
@@ -17,12 +17,12 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 - open .pdf
 
 
-# work flow 
+# work flow  way
 ## req
-neovim
-pdflatex --version  # compiler
-latexmk --version   # auto compile
-zathura --version   # pdf viewer
+- neovim
+- pdflatex // compiler
+- latexmk  
+- zathura // pdf viewer
 
 neovim and plugin
 
