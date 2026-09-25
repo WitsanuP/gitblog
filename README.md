@@ -2,6 +2,7 @@
 
 about work dir
 
+```
 02_hardware/
     00_rtl/
     01_tb/
@@ -16,3 +17,10 @@ about work dir
 01_fix_point_sim (The Quantization)
 02_hdl (The Source Code & Verification)
 03_synthesis / 03_fpga_impl (The Physical Implementation)
+```
+
+
+how to  
+hop
+nvim with latex
+
