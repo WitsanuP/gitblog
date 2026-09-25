@@ -16,7 +16,7 @@
 
 
 ## setup
-### 1 install this 
+### 1. install this 
 ```
 sudo apt update
 sudo apt install neovim
@@ -25,7 +25,7 @@ sudo apt install zathura
 ```
 
 
-### 2 in this file`~/.config/nvim/init.vim`
+### 2. in this file`~/.config/nvim/init.vim`
 ```
 " ===== เริ่มส่วนของ vim-plug =====
 call plug#begin('~/.vim/plugged')
@@ -44,7 +44,7 @@ let g:vimtex_compiler_method = 'latexmk'
 syntax on
 set number
 ```
-### 3 setup plugin neovim
+### 3. setup plugin neovim
 install vim manage plugin
 ```
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
