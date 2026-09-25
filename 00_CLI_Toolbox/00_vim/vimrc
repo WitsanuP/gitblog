@@ -17,3 +17,10 @@ set undoreload=10000
 autocmd BufReadPost * normal! g`"
 "autocmd FileType make setlocal noexpandtab
 autocmd FileType make set noexpandtab
+
+autocmd BufNewFile,BufRead *.vh setfiletype verilog
+
+
+autocmd BufNewFile *.v,*.sv  0r ~/.vim/templates/verilog.v
+autocmd BufNewFile *.h,*.hpp 0r ~/.vim/templates/cpp.h
+autocmd BufNewFile Makefile  0r ~/.vim/templates/makefile

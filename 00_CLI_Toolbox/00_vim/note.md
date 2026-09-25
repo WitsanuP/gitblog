@@ -84,3 +84,17 @@ find and repeat
 `g` : global repeat all in file
 `c` : confirm
 `i` : dont care พิมพ์เล็กพิมม์ใหญ่
+
+
+
+
+
+
+
+tree
+~
+ |── .vimrc
+ |── .vim/templates
+      ├── cpp.h
+      ├── makefile
+      └── verilog.v
