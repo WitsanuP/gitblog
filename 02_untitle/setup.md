@@ -57,13 +57,12 @@ open neovim `nvim`
 
 
 ## let start
----
+
 command | meaning
----
+--- | ---
 \ll | compile(continuous compile - will compile when save file)
 \lv | open pdf with zathura
 \lc | clean file auxiliary (.aux, .log, other)
 \lk | stop compile 
----
 
 
