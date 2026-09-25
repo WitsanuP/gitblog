@@ -1,13 +1,3 @@
-using neovim and 
-
-pdflatex --version  # compiler
-latexmk --version   # auto compile
-zathura --version   # pdf viewer
-
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-
 # old school way 
 ## req
 - must haave `pdflatex` 
@@ -17,16 +7,16 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 - open .pdf
 
 
-# work flow  way
+# workflow  way
 ## req
-- neovim
+- neovim and plugin (vimtex)
 - pdflatex // compiler
 - latexmk  
 - zathura // pdf viewer
 
-neovim and plugin
 
 ## setup
+### 1 install this 
 ```
 sudo apt update
 sudo apt install neovim
@@ -35,7 +25,7 @@ sudo apt install zathura
 ```
 
 
-in this file`~/.config/nvim/init.vim`
+### 2 in this file`~/.config/nvim/init.vim`
 ```
 " ===== เริ่มส่วนของ vim-plug =====
 call plug#begin('~/.vim/plugged')
@@ -54,5 +44,26 @@ let g:vimtex_compiler_method = 'latexmk'
 syntax on
 set number
 ```
+### 3 setup plugin neovim
+install vim manage plugin
+```
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+open neovim `nvim` 
+```
+:PlugInstall
+```
+
 
 ## let start
+---
+command | meaning
+---
+\ll | compile(continuous compile - will compile when save file)
+\lv | open pdf with zathura
+\lc | clean file auxiliary (.aux, .log, other)
+\lk | stop compile 
+---
+
+
